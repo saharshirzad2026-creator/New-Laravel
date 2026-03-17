@@ -19,9 +19,9 @@ class BookFactory extends Factory
     {
         return [
             //
-            "name"=> $this->faker->sentence(3),
-            "author_name"=> $this->faker->name,
-            "description"=> $this->faker->sentence(6),
+            "title"=>fake()->sentence(4),
+            "rating"=>fake()->numberBetween(1,10),
+            "author"=>fake()->name(),
         ];
     }
 }
